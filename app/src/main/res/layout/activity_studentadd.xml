@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Settings.Studentadd">
+
+<!--
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/horscroll"
+        android:paddingEnd="40dp"
+        tools:ignore="RtlSymmetry">
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           >
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Choose year"
+                   android:layout_gravity="center_horizontal"
+                   />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Scroll right"
+                   android:layout_gravity="center"
+                   android:textColor="@color/black"
+                   android:textSize="15sp"
+                   />
+
+           </LinearLayout>
+
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Choose section"
+                   android:layout_gravity="center_horizontal"
+                   />
+
+
+           </LinearLayout>
+       </LinearLayout>
+    </HorizontalScrollView>
+-->
+
+
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       >
+       <LinearLayout
+           android:id="@+id/Linearlayout_student"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:visibility="visible"
+           >
+           <com.google.android.material.textfield.TextInputLayout
+               style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+               android:layout_width="350dp"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               app:boxBackgroundMode="outline"
+               app:boxCornerRadiusBottomEnd="5dp"
+               app:boxCornerRadiusBottomStart="5dp"
+               app:boxCornerRadiusTopEnd="5dp"
+               app:boxCornerRadiusTopStart="5dp"
+               android:layout_marginTop="35dp"
+               app:counterEnabled="true"
+               android:id="@+id/studentname"
+               app:counterMaxLength="30"
+               app:endIconMode="clear_text">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="@drawable/custom_input"
+                   android:allowUndo="true"
+                   android:hint="Name :"
+                   android:layout_marginBottom="5dp"
+                   android:textColor="#000000"
+                   android:textStyle="bold|italic"
+                   app:endIconMode="clear_text"
+                   android:maxLength="30"
+                   android:inputType="text"
+                   tools:targetApi="o" />
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+               android:layout_width="350dp"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               app:boxBackgroundMode="outline"
+               app:boxCornerRadiusBottomEnd="5dp"
+               app:boxCornerRadiusBottomStart="5dp"
+               app:boxCornerRadiusTopEnd="5dp"
+               app:boxCornerRadiusTopStart="5dp"
+               android:layout_marginTop="15dp"
+               app:counterEnabled="true"
+               android:id="@+id/studentrollnum"
+               app:counterMaxLength="10"
+               app:endIconMode="clear_text">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="@drawable/custom_input"
+                   android:allowUndo="true"
+                   android:hint="Rollnum :"
+                   android:layout_marginBottom="5dp"
+                   android:textColor="#000000"
+                   android:textStyle="bold|italic"
+                   app:endIconMode="clear_text"
+                   android:maxLength="10"
+                   android:inputType="numberDecimal"
+                   tools:targetApi="o" />
+
+           </com.google.android.material.textfield.TextInputLayout>
+           <com.google.android.material.textfield.TextInputLayout
+               style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+               android:layout_width="350dp"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               app:boxBackgroundMode="outline"
+               app:boxCornerRadiusBottomEnd="5dp"
+               app:boxCornerRadiusBottomStart="5dp"
+               app:boxCornerRadiusTopEnd="5dp"
+               app:boxCornerRadiusTopStart="5dp"
+               android:layout_marginTop="15dp"
+               app:counterEnabled="true"
+               android:id="@+id/parentsphonenumber"
+               app:counterMaxLength="10"
+               app:endIconMode="clear_text">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="@drawable/custom_input"
+                   android:allowUndo="true"
+                   android:hint="Parent's Phone number :"
+                   android:layout_marginBottom="5dp"
+                   android:textColor="#000000"
+                   android:textStyle="bold|italic"
+                   app:endIconMode="clear_text"
+                   android:maxLength="10"
+                   android:inputType="number"
+                   tools:targetApi="o" />
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+               android:layout_width="350dp"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               app:boxBackgroundMode="outline"
+               app:boxCornerRadiusBottomEnd="5dp"
+               app:boxCornerRadiusBottomStart="5dp"
+               app:boxCornerRadiusTopEnd="5dp"
+               app:boxCornerRadiusTopStart="5dp"
+               android:layout_marginTop="15dp"
+               app:counterEnabled="true"
+               android:id="@+id/studentemail"
+               app:counterMaxLength="30"
+               app:endIconMode="clear_text">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="@drawable/custom_input"
+                   android:allowUndo="true"
+                   android:hint="Email :"
+                   android:layout_marginBottom="5dp"
+                   android:textColor="#000000"
+                   android:textStyle="bold|italic"
+                   app:endIconMode="clear_text"
+                   android:maxLength="30"
+                   android:inputType="text"
+                   tools:targetApi="o" />
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:weightSum="1"
+               >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:layout_weight="0.166"
+                   android:text="Choose year"/>
+               <com.hitomi.cmlibrary.CircleMenu
+                   android:id="@+id/circle_menu"
+                   android:layout_width="wrap_content"
+                   android:layout_height="185dp"
+                   android:layout_weight="0.5"
+                   />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Year :"
+                   android:layout_gravity="center_vertical"
+                   android:layout_weight="0.166"
+                   />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/yearid"
+                   android:layout_gravity="center_vertical"
+                   android:layout_weight="0.166"
+                   />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:layout_weight="0.166"
+                   android:text="Choose sect"/>
+               <com.hitomi.cmlibrary.CircleMenu
+                   android:id="@+id/circle_menu1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="185dp"
+                   android:layout_weight="0.5"
+                   />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="0.166"
+                   android:text="Sec :"
+                   android:layout_gravity="center_vertical"
+                   />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="0.166"
+                   android:id="@+id/secid"
+                   android:layout_gravity="center_vertical"
+                   />
+           </LinearLayout>
+
+
+
+           <Button
+               android:id="@+id/submitstudent"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Submit"
+               android:backgroundTint="#22bb"
+               android:layout_gravity="center_horizontal"
+               android:textColor="@color/black"
+               />
+
+
+
+       </LinearLayout>
+
+   </ScrollView>
+
+</LinearLayout>

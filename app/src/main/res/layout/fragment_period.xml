@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings.PeriodandTime.FragmentPeriod">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:weightSum="1"
+        >
+
+       <!-- <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.02"
+            >
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/changeview"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerviewPeriods"
+            android:layout_weight="0.99"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:gravity="bottom|center"
+            >
+            <Button
+                android:id="@+id/add_period_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Period"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/blue1"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

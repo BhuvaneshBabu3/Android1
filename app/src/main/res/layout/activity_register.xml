@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.RegisterActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       >
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:textColor="#000000"
+           android:textStyle="bold"
+           android:text="Register here"
+           android:layout_gravity="center_horizontal"
+           />
+
+       <com.google.android.material.textfield.TextInputLayout
+           style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+           android:layout_width="350dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           app:boxBackgroundMode="outline"
+           app:boxCornerRadiusBottomEnd="5dp"
+           app:boxCornerRadiusBottomStart="5dp"
+           app:boxCornerRadiusTopEnd="5dp"
+           app:boxCornerRadiusTopStart="5dp"
+           android:layout_marginTop="15dp"
+           app:counterEnabled="true"
+           android:id="@+id/name"
+           app:counterMaxLength="30"
+           app:endIconMode="clear_text">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@drawable/custom_input"
+               android:allowUndo="true"
+               android:hint="@string/username"
+               android:layout_marginBottom="5dp"
+               android:textColor="#000000"
+               android:textStyle="bold|italic"
+               app:endIconMode="clear_text"
+               android:maxLength="20"
+               android:inputType="text"
+               tools:targetApi="o" />
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <com.google.android.material.textfield.TextInputLayout
+           style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+           android:layout_width="350dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           app:boxBackgroundMode="outline"
+           app:boxCornerRadiusBottomEnd="5dp"
+           app:boxCornerRadiusBottomStart="5dp"
+           app:boxCornerRadiusTopEnd="5dp"
+           app:boxCornerRadiusTopStart="5dp"
+           android:layout_marginTop="5dp"
+           app:counterEnabled="true"
+           app:counterMaxLength="10"
+           android:id="@+id/rollnum"
+           app:endIconMode="clear_text">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@drawable/custom_input"
+               android:allowUndo="true"
+               android:hint="@string/roll_number"
+               android:layout_marginBottom="5dp"
+               android:keyboardNavigationCluster="true"
+               android:outlineProvider="bounds"
+               android:textColor="#000000"
+               android:textStyle="bold|italic"
+               app:endIconMode="clear_text"
+               android:maxLength="10"
+               android:inputType="number"
+               tools:targetApi="o" />
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <com.google.android.material.textfield.TextInputLayout
+           style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+           android:layout_width="350dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           app:boxBackgroundMode="outline"
+           app:boxCornerRadiusBottomEnd="5dp"
+           app:boxCornerRadiusBottomStart="5dp"
+           app:boxCornerRadiusTopEnd="5dp"
+           app:boxCornerRadiusTopStart="5dp"
+           android:layout_marginTop="5dp"
+           app:counterEnabled="true"
+           app:counterMaxLength="30"
+           android:id="@+id/email"
+           app:endIconMode="clear_text">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@drawable/custom_input"
+               android:allowUndo="true"
+               android:hint="@string/email"
+               android:layout_marginBottom="5dp"
+               android:keyboardNavigationCluster="true"
+               android:outlineProvider="bounds"
+               android:textColor="#000000"
+               android:textStyle="bold|italic"
+               app:endIconMode="clear_text"
+               android:maxLength="30"
+               android:inputType="textEmailAddress"
+               tools:targetApi="o" />
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <com.google.android.material.textfield.TextInputLayout
+           style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+           android:layout_width="350dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           app:boxBackgroundMode="outline"
+           app:boxCornerRadiusBottomEnd="5dp"
+           app:boxCornerRadiusBottomStart="5dp"
+           app:boxCornerRadiusTopEnd="5dp"
+           app:boxCornerRadiusTopStart="5dp"
+           android:layout_marginTop="5dp"
+           app:counterEnabled="true"
+           app:counterMaxLength="20"
+           android:id="@+id/password"
+           app:endIconMode="password_toggle">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@drawable/custom_input"
+               android:allowUndo="true"
+               android:hint="@string/password"
+               android:layout_marginBottom="5dp"
+               android:keyboardNavigationCluster="true"
+               android:outlineProvider="bounds"
+               android:textColor="#000000"
+               android:textStyle="bold|italic"
+               app:endIconMode="clear_text"
+               android:maxLength="20"
+               android:inputType="textPassword"
+               tools:targetApi="o" />
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <com.google.android.material.textfield.TextInputLayout
+           style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+           android:layout_width="350dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           app:boxBackgroundMode="outline"
+           app:boxCornerRadiusBottomEnd="5dp"
+           app:boxCornerRadiusBottomStart="5dp"
+           app:boxCornerRadiusTopEnd="5dp"
+           app:boxCornerRadiusTopStart="5dp"
+           android:layout_marginTop="5dp"
+           app:counterEnabled="true"
+           app:counterMaxLength="20"
+           android:id="@+id/cnfmpassword"
+           app:endIconMode="password_toggle">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@drawable/custom_input"
+               android:allowUndo="true"
+               android:hint="@string/cnfmpassword"
+               android:layout_marginBottom="5dp"
+               android:keyboardNavigationCluster="true"
+               android:outlineProvider="bounds"
+               android:textColor="#000000"
+               android:textStyle="bold|italic"
+               app:endIconMode="clear_text"
+               android:maxLength="20"
+               android:inputType="textPassword"
+               tools:targetApi="o" />
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+
+<!--
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_gravity="center"
+           android:layout_marginTop="5dp"
+           >
+           <ImageView
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:background="@drawable/image"
+               android:id="@+id/staffimg"/>
+           <Button
+               android:id="@+id/chooseimg"
+               android:layout_marginStart="5dp"
+               style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:text="Choose Image"
+               android:textColor="@color/black"
+               android:backgroundTint="#22bb"
+               />
+       </LinearLayout>
+-->
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="15dp"
+           android:gravity="center"
+           >
+           <TextView
+               android:id="@+id/choosetxtdept"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/choose_dept"/>
+           <Space
+               android:layout_width="30dp"
+               android:layout_height="match_parent"
+               />
+           <Spinner
+               android:id="@+id/spindept"
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               />
+       </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="25dp"
+           android:gravity="center"
+           >
+           <TextView
+               android:id="@+id/choosetxtpost"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/choose_year"/>
+           <Space
+               android:layout_width="30dp"
+               android:layout_height="match_parent"
+               />
+           <Spinner
+               android:id="@+id/spinpost"
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               />
+       </LinearLayout>
+
+       <LinearLayout
+           android:id="@+id/ll1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="25dp"
+           android:gravity="center"
+           android:visibility="gone"
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Choose year"/>
+           <Space
+               android:layout_width="30dp"
+               android:layout_height="match_parent"
+               />
+           <Spinner
+               android:id="@+id/staff_post_year"
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               />
+       </LinearLayout>
+
+       <LinearLayout
+           android:id="@+id/ll2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="25dp"
+           android:gravity="center"
+           android:visibility="gone"
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Choose section"/>
+           <Space
+               android:layout_width="30dp"
+               android:layout_height="match_parent"
+               />
+           <Spinner
+               android:id="@+id/staff_post_sec"
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               />
+       </LinearLayout>
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center"
+       android:layout_marginBottom="10dp"
+       >
+       <Button
+           style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+           android:id="@+id/submitbtn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:textColor="@color/black"
+           android:text="Submit"
+           android:drawableEnd="@drawable/exit"
+           android:backgroundTint="#22bb"
+           />
+
+       <Space
+           android:layout_width="25dp"
+           android:layout_height="wrap_content"
+           />
+
+       <Button
+           style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+           android:id="@+id/cancelbtn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:textColor="@color/black"
+           android:text="@string/cancel"
+           android:drawableEnd="@drawable/cancel"
+           android:backgroundTint="#22bb"
+           />
+   </LinearLayout>
+
+
+   </LinearLayout>
+
+</ScrollView>

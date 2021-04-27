@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".Settings.AddStudent">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbaraddstudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue1"
+        android:minHeight="?attr/actionBarSize"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel1"
+        android:orientation="vertical"
+        android:stateListAnimator="@null">
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:id="@+id/swipeRefreshLayout"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/AddrecycleIst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/add_circle"
+            android:contentDescription="@string/todo"
+            app:elevation="6dp"
+            android:layout_alignParentEnd="true"
+            app:rippleColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentBottom="true"
+            app:pressedTranslationZ="12dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

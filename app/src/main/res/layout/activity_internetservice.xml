@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Login.internetservice">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/wifi_off"
+        android:fitsSystemWindows="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="please connect to internet to proceed further"
+        android:textColor="#AA00D6"
+        android:gravity="center_horizontal"
+        android:fitsSystemWindows="true"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/connectinternet"
+            android:text="CONNECT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#22bb"
+            android:textColor="#AA00D6"
+            />
+        <TextView
+            android:id="@+id/cancelinternet"
+            android:layout_width="wrap_content"
+            android:text="CANCEL"
+            android:textColor="#AA00D6"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#22bb"
+            android:layout_marginStart="20dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

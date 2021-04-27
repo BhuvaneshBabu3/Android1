@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    tools:context=".Settings.Edit">
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:text="kjhfuefrhnverhkuernkvhnenkghggggggggggggggggggggvejvkukerhgierukbgkerjrhgbkejbgkegbgkjdvekurfbblejfjfferggjgb.lsrhgivhgsheeoigghoeihgvv.gaehgiluaeghnaeo;hrg.aeehgoieahrigvherihgl9el8gaehgierhggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnkffffffffffffffffffffffffffffffffffffffffffffff"
+            android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+            android:minHeight="50dp"/>
+    </ScrollView>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.5"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit-I"
+            android:textSize="25sp"
+            android:layout_marginBottom="50dp"
+            android:ems="5"
+            android:backgroundTint="@color/blue1"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit-II"
+            android:textSize="25sp"
+            android:layout_marginBottom="50dp"
+            android:ems="5"
+            android:backgroundTint="@color/blue1"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit-III"
+            android:textSize="25sp"
+            android:layout_marginBottom="50dp"
+            android:ems="5"
+            android:backgroundTint="@color/blue1"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit-IV"
+            android:textSize="25sp"
+            android:layout_marginBottom="50dp"
+            android:ems="5"
+            android:backgroundTint="@color/blue1"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit-V"
+            android:textSize="25sp"
+            android:layout_marginBottom="50dp"
+            android:ems="5"
+            android:backgroundTint="@color/blue1"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.5"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              >
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Topic - 1"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginBottom="40dp"
+                  />
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Topic - 2"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginBottom="40dp"
+                  />
+
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Topic - 3"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginBottom="40dp"
+                  />
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Topic - 4"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginBottom="40dp"
+                  />
+
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Topic - 5"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginBottom="40dp"
+                  />
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Topic - 6"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginBottom="40dp"
+                  />
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Topic - 7"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginBottom="40dp"
+                  />
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Topic - 8"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginBottom="40dp"
+                  />
+          </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

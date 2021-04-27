@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="UnusedAttribute">
+
+    <TimePicker
+        android:id="@+id/timepicker_period"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="clock"
+        android:numbersBackgroundColor="#FFFD91"
+        android:numbersSelectorColor="#F44336"
+        android:outlineSpotShadowColor="#E449FF"
+        />
+
+</LinearLayout>

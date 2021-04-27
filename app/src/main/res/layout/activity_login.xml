@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login.Login"
+    android:weightSum="5">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/login"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        />
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_gravity="center_horizontal"
+       android:layout_weight="0.125"
+       >
+       <com.google.android.material.textfield.TextInputLayout
+           style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+           android:layout_width="350dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           app:boxBackgroundMode="outline"
+           app:boxCornerRadiusBottomEnd="5dp"
+           app:boxCornerRadiusBottomStart="5dp"
+           app:boxCornerRadiusTopEnd="5dp"
+           app:boxCornerRadiusTopStart="5dp"
+           android:layout_marginTop="15dp"
+           app:counterEnabled="true"
+           android:id="@+id/loginname"
+           app:counterMaxLength="10"
+           app:endIconMode="clear_text">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@drawable/custom_input"
+               android:allowUndo="true"
+               android:hint="Rollnum :"
+               android:layout_marginBottom="5dp"
+               android:textColor="#000000"
+               android:textStyle="bold|italic"
+               app:endIconMode="clear_text"
+               android:maxLength="10"
+               android:inputType="numberDecimal"
+               tools:targetApi="o" />
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <com.google.android.material.textfield.TextInputLayout
+           style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+           android:layout_width="350dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           app:boxBackgroundMode="outline"
+           app:boxCornerRadiusBottomEnd="5dp"
+           app:boxCornerRadiusBottomStart="5dp"
+           app:boxCornerRadiusTopEnd="5dp"
+           app:boxCornerRadiusTopStart="5dp"
+           android:layout_marginTop="15dp"
+           app:counterEnabled="true"
+           app:counterMaxLength="20"
+           android:id="@+id/lognipassword"
+           app:endIconMode="password_toggle">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@drawable/custom_input"
+               android:allowUndo="true"
+               android:hint="@string/password"
+               android:layout_marginBottom="5dp"
+               android:keyboardNavigationCluster="true"
+               android:outlineProvider="bounds"
+               android:textColor="#000000"
+               android:textStyle="bold|italic"
+               app:endIconMode="clear_text"
+               android:maxLength="20"
+               android:inputType="textPassword"
+               tools:targetApi="o" />
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:weightSum="1"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.3"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            tools:ignore="NestedWeights">
+            <TextView
+                android:id="@+id/fgtpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="forget Password?"
+                />
+        </LinearLayout>
+        <Space
+            android:layout_width="0.4dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.3"
+            android:layout_gravity="center"
+            android:gravity="end"
+            android:weightSum="1"
+            >
+            <TextView
+                android:id="@+id/remembermecheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remember_me"
+                android:textStyle="bold"
+                android:layout_weight="0.2"
+                tools:ignore="NestedWeights" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkboxlogin"
+                />
+        </LinearLayout>
+    </LinearLayout>
+   </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        >
+        <Button
+            android:id="@+id/loginsubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Submit"
+            android:textColor="#000000"
+            android:backgroundTint="#22bb"
+            />
+            <Space
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/logincancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Cancel"
+            android:textColor="#000000"
+            android:backgroundTint="#22bb"
+            />
+    </LinearLayout>
+
+</LinearLayout>

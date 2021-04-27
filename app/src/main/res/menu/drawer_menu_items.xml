@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/Dashboard"
+            android:icon="@drawable/dashboard"
+            android:title="@string/dashboard" />
+
+        <item
+            android:id="@+id/Attendance"
+            android:icon="@drawable/details"
+            android:title="@string/attendance" />
+
+        <item
+            android:id="@+id/Update"
+            android:icon="@drawable/update"
+            android:title="@string/update" />
+
+        <item
+            android:id="@+id/Settings"
+            android:icon="@drawable/settings"
+            android:title="@string/settings" />
+
+    </group>
+</menu>
