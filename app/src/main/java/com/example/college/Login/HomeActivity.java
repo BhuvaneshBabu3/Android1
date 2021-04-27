@@ -46,7 +46,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        requestWindowFeature(FEATURE_SUPPORT_ACTION_BAR);
         setContentView(R.layout.activity_home);
 
         Toolbar toolbar;
