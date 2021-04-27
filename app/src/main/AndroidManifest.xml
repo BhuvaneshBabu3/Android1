@@ -52,7 +52,7 @@
         -->
         <activity android:name=".Login.Login" />
         <activity android:name=".Login.RegisterActivity" />
-        <activity android:name=".Login.FrontActivity">
+        <activity android:name=".Login.FrontActivity" android:theme="@style/Theme.College.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
